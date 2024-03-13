@@ -38,3 +38,24 @@ exercises.c:64:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 617ae98
+Wed 13 Mar 2024 08:59:51 PM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:52:3: error: ‘evenArr’ undeclared (first use in this function)
+   52 |   evenArr = (int *)malloc(count * sizeof(int));
+      |   ^~~~~~~
+exercises.c:52:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:52:27: error: ‘count’ undeclared (first use in this function)
+   52 |   evenArr = (int *)malloc(count * sizeof(int));
+      |                           ^~~~~
+exercises.c:54:7: error: ‘i’ undeclared (first use in this function)
+   54 |   for(i = 0; i < size; i++)
+      |       ^
+exercises.c:64:1: error: control reaches end of non-void function [-Werror=return-type]
+   64 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+e54b444
