@@ -77,3 +77,21 @@ Wed 13 Mar 2024 09:08:17 PM UTC:
  tests:  0|4
 total_score: 30/70
 4ed50a7
+Wed 13 Mar 2024 09:14:27 PM UTC: 
+ exercises.c | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:85:3: error: ‘cont’ undeclared (first use in this function)
+   85 |   cont = 0;
+      |   ^~~~
+exercises.c:85:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:86:3: error: ‘newSize’ undeclared (first use in this function)
+   86 |   newSize = size1 + size2;
+      |   ^~~~~~~
+exercises.c:87:8: error: variable ‘newArr’ set but not used [-Werror=unused-but-set-variable]
+   87 |   int *newArr = (int*) malloc(newSize * sizeof(int));
+      |        ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f4cfb61
