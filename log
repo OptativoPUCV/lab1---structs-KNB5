@@ -95,3 +95,36 @@ exercises.c:87:8: error: variable ‘newArr’ set but not used [-Werror=unused-
 cc1: all warnings being treated as errors
 Compilation failed
 f4cfb61
+Wed 13 Mar 2024 09:22:27 PM UTC: 
+ exercises.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:86:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   86 | {
+      | ^
+exercises.c:90:3: error: ‘cont’ undeclared (first use in this function)
+   90 |   cont = 0;
+      |   ^~~~
+exercises.c:90:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:91:3: error: ‘newSize’ undeclared (first use in this function)
+   91 |   newSize = size1 + size2;
+      |   ^~~~~~~
+exercises.c:104:9: error: expected expression before ‘int’
+  104 |   qsort(int newArr, newSize, sizeof(int), comp);
+      |         ^~~
+exercises.c:104:3: error: too few arguments to function ‘qsort’
+  104 |   qsort(int newArr, newSize, sizeof(int), comp);
+      |   ^~~~~
+In file included from exercises.c:4,
+                 from test.c:1:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/stdlib.h:838:13: note: declared here
+  838 | extern void qsort (void *__base, size_t __nmemb, size_t __size,
+      |             ^~~~~
+In file included from test.c:1:
+exercises.c:92:8: error: variable ‘newArr’ set but not used [-Werror=unused-but-set-variable]
+   92 |   int *newArr = (int*) malloc(newSize * sizeof(int));
+      |        ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9917a3a
