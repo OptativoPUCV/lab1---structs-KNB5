@@ -249,3 +249,22 @@ exercises.c:89:26: error: ‘cont2’ undeclared (first use in this function); d
       |                          cont
 Compilation failed
 70711ff
+Thu 14 Mar 2024 02:47:17 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:88:10: error: expected expression before ‘]’ token
+   88 |   result[] = NULL;
+      |          ^
+exercises.c:90:9: error: ‘cont1’ undeclared (first use in this function); did you mean ‘cont’?
+   90 |   while(cont1 < size1 && cont2 < size2)
+      |         ^~~~~
+      |         cont
+exercises.c:90:9: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:90:26: error: ‘cont2’ undeclared (first use in this function); did you mean ‘cont’?
+   90 |   while(cont1 < size1 && cont2 < size2)
+      |                          ^~~~~
+      |                          cont
+Compilation failed
+dbbd840
