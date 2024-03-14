@@ -161,3 +161,31 @@ exercises.c:92:8: error: variable ‘newArr’ set but not used [-Werror=unused-
 cc1: all warnings being treated as errors
 Compilation failed
 a9480f1
+Thu 14 Mar 2024 02:32:07 PM UTC: 
+ exercises.c | 21 +++++++++++++++------
+ 1 file changed, 15 insertions(+), 6 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:85:3: error: ‘cont’ undeclared (first use in this function)
+   85 |   cont = 0;
+      |   ^~~~
+exercises.c:85:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:86:3: error: ‘newSize’ undeclared (first use in this function)
+   86 |   newSize = size1 + size2;
+      |   ^~~~~~~
+exercises.c:102:7: error: ‘i’ undeclared (first use in this function)
+  102 |   for(i = 0; i < newSize; i++)
+      |       ^
+exercises.c:104:11: error: ‘j’ undeclared (first use in this function); did you mean ‘jn’?
+  104 |       for(j = i; j < largo; j++)
+      |           ^
+      |           jn
+exercises.c:104:22: error: ‘largo’ undeclared (first use in this function)
+  104 |       for(j = i; j < largo; j++)
+      |                      ^~~~~
+exercises.c:87:8: error: variable ‘newArr’ set but not used [-Werror=unused-but-set-variable]
+   87 |   int *newArr = (int*) malloc(newSize * sizeof(int));
+      |        ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+5f0ab36

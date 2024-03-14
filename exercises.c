@@ -81,11 +81,6 @@ arreglos en un tercer arreglo también ordenado de menor a mayor.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[]) 
-
-int comp(const void *item, const void *pivote)
-{
-  
-}
 {
   cont = 0;
   newSize = size1 + size2;
@@ -101,7 +96,21 @@ int comp(const void *item, const void *pivote)
           newArr[cont] = arr2[k];
         }
     }
-  qsort(int newArr, newSize, sizeof(int), comp);
+  
+  int temp;
+  
+  for(i = 0; i < newSize; i++)
+    {
+      for(j = i; j < largo; j++)
+        {
+          if(newArr[j] < newArr[i])
+          {
+            temp = newArr[i];
+            newArr[i] = newArr[j];
+            newArr[j] = temp;
+          }
+        }
+    }
 }
 
 /*
