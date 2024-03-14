@@ -138,7 +138,7 @@ int checkSorted(int arr[], int size)
 
   if(contMenor == size - 1)
   {
-    orden = 1
+    orden = 1;
   }
   else if(contMayor == size - 1)
   {
