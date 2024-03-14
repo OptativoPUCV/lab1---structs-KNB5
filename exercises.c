@@ -98,6 +98,19 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
       }
       cont++;
     }
+
+  /*while(j < size1)
+    {
+      result[cont] = arr1[j];
+      j++;
+      cont++;
+    }
+  while(k < size2)
+    {
+      result[cont] = arr2[k];
+      k++;
+      cont++;
+    }*/ 
 }
 /*
 Ejercicio 5: Comprobación de Ordenación
