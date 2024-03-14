@@ -454,3 +454,24 @@ Thu 14 Mar 2024 03:20:14 PM UTC:
  tests:  0|3
 total_score: 40/70
 e62a09b
+Thu 14 Mar 2024 03:28:33 PM UTC: 
+ exercises.c | 27 ++++++++++++++++++++++++++-
+ 1 file changed, 26 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:123:3: error: ‘orden’ undeclared (first use in this function)
+  123 |   orden = 0
+      |   ^~~~~
+exercises.c:123:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:123:12: error: expected ‘;’ before ‘for’
+  123 |   orden = 0
+      |            ^
+      |            ;
+  124 |   for(int i = 0; i < size - 1; i++)
+      |   ~~~       
+exercises.c:146:1: error: control reaches end of non-void function [-Werror=return-type]
+  146 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+76f28e7
