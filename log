@@ -475,3 +475,24 @@ exercises.c:146:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 76f28e7
+Thu 14 Mar 2024 03:29:48 PM UTC: 
+ exercises.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:123:3: error: ‘orden’ undeclared (first use in this function)
+  123 |   orden = 0
+      |   ^~~~~
+exercises.c:123:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:123:12: error: expected ‘;’ before ‘for’
+  123 |   orden = 0
+      |            ^
+      |            ;
+  124 |   for(int i = 0; i < size - 1; i++)
+      |   ~~~       
+exercises.c:150:1: error: control reaches end of non-void function [-Werror=return-type]
+  150 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+9e197e7
