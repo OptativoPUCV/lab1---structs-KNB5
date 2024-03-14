@@ -206,3 +206,30 @@ exercises.c:100:7: error: ‘i’ undeclared (first use in this function)
       |       ^
 Compilation failed
 a1e2037
+Thu 14 Mar 2024 02:36:38 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:85:3: error: ‘cont’ undeclared (first use in this function)
+   85 |   cont = 0;
+      |   ^~~~
+exercises.c:85:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:86:3: error: ‘newSize’ undeclared (first use in this function)
+   86 |   newSize = size1 + size2;
+      |   ^~~~~~~
+exercises.c:100:7: error: ‘i’ undeclared (first use in this function)
+  100 |   for(i = 0; i < newArr; i++)
+      |       ^
+exercises.c:114:11: error: ‘j’ undeclared (first use in this function); did you mean ‘jn’?
+  114 |       for(j = i; j < largo; j++)
+      |           ^
+      |           jn
+exercises.c:114:22: error: ‘largo’ undeclared (first use in this function)
+  114 |       for(j = i; j < largo; j++)
+      |                      ^~~~~
+exercises.c:118:13: error: ‘temp’ undeclared (first use in this function)
+  118 |             temp = newArr[i];
+      |             ^~~~
+Compilation failed
+4dd8e4f

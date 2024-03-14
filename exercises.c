@@ -109,7 +109,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
       }   
     }
   
-  /*for(i = 0; i < newSize; i++)
+  for(i = 0; i < newSize; i++)
     {
       for(j = i; j < largo; j++)
         {
@@ -120,7 +120,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
             newArr[j] = temp;
           }
         }
-    }*/
+    }
 }
 
 /*
