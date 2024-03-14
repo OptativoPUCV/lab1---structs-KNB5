@@ -268,3 +268,31 @@ exercises.c:90:26: error: ‘cont2’ undeclared (first use in this function); d
       |                          cont
 Compilation failed
 dbbd840
+Thu 14 Mar 2024 02:48:16 PM UTC: 
+ exercises.c | 15 ++++++++++++++-
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:89:9: error: ‘cont1’ undeclared (first use in this function); did you mean ‘cont’?
+   89 |   while(cont1 < size1 && cont2 < size2)
+      |         ^~~~~
+      |         cont
+exercises.c:89:9: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:89:26: error: ‘cont2’ undeclared (first use in this function); did you mean ‘cont’?
+   89 |   while(cont1 < size1 && cont2 < size2)
+      |                          ^~~~~
+      |                          cont
+exercises.c:104:9: error: ‘index1’ undeclared (first use in this function); did you mean ‘index’?
+  104 |   while(index1 < size1)
+      |         ^~~~~~
+      |         index
+exercises.c:110:9: error: ‘index2’ undeclared (first use in this function); did you mean ‘index’?
+  110 |   while(index2 < size2)
+      |         ^~~~~~
+      |         index
+exercises.c: At top level:
+exercises.c:132:1: error: expected identifier or ‘(’ before ‘}’ token
+  132 | }
+      | ^
+Compilation failed
+8a2b112
