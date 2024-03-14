@@ -592,3 +592,34 @@ Thu 14 Mar 2024 04:33:17 PM UTC:
  tests:  0|0
 total_score: 70/70
 be626c8
+Thu 14 Mar 2024 04:43:11 PM UTC: 
+ exercises.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:202:39: error: passing argument 1 of ‘malloc’ makes integer from pointer without a cast [-Werror=int-conversion]
+  202 |       Nodo* nuevoNodo = (Nodo*)malloc(nuevoNodo, sizeof(Nodo));
+      |                                       ^~~~~~~~~
+      |                                       |
+      |                                       Nodo * {aka struct nodo *}
+In file included from exercises.c:4,
+                 from test.c:1:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/stdlib.h:540:29: note: expected ‘size_t’ {aka ‘long unsigned int’} but argument is of type ‘Nodo *’ {aka ‘struct nodo *’}
+  540 | extern void *malloc (size_t __size) __THROW __attribute_malloc__
+      |                      ~~~~~~~^~~~~~
+In file included from test.c:1:
+exercises.c:202:32: error: too many arguments to function ‘malloc’
+  202 |       Nodo* nuevoNodo = (Nodo*)malloc(nuevoNodo, sizeof(Nodo));
+      |                                ^~~~~~
+In file included from exercises.c:4,
+                 from test.c:1:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/stdlib.h:540:14: note: declared here
+  540 | extern void *malloc (size_t __size) __THROW __attribute_malloc__
+      |              ^~~~~~
+In file included from test.c:1:
+exercises.c:198:9: error: variable ‘ultimo’ set but not used [-Werror=unused-but-set-variable]
+  198 |   Nodo* ultimo = NULL;
+      |         ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e3993f3
