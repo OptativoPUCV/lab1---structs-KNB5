@@ -97,9 +97,19 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
         }
     }
   
-  int temp;
+  for(i = 0; i < newArr; i++)
+    {
+      if(i = 0)
+      {
+        printf("%d", newArr[i]);
+      }
+      else
+      {
+        printf("- %d", newArr[i]);
+      }   
+    }
   
-  for(i = 0; i < newSize; i++)
+  /*for(i = 0; i < newSize; i++)
     {
       for(j = i; j < largo; j++)
         {
@@ -110,7 +120,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
             newArr[j] = temp;
           }
         }
-    }
+    }*/
 }
 
 /*
