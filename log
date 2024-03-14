@@ -545,3 +545,13 @@ Thu 14 Mar 2024 03:41:38 PM UTC:
  tests:  0|2
 total_score: 50/70
 4a82015
+Thu 14 Mar 2024 03:48:07 PM UTC: 
+ exercises.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:174:22: error: ‘Autor’ has no member named ‘nombreAutor’
+  174 |   strcpy(libro->autor.nombreAutor, nombreAutor);
+      |                      ^
+Compilation failed
+c38df3e
