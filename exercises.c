@@ -71,7 +71,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
     }
   *newSize = count;
   return evenArr;
-
+}
 
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
@@ -110,8 +110,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
       result[cont] = arr2[k];
       k++;
       cont++;
-    }
-}  
+    } 
 
 /*
 Ejercicio 5: Comprobación de Ordenación
