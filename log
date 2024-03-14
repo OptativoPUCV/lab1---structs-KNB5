@@ -502,3 +502,16 @@ Thu 14 Mar 2024 03:30:22 PM UTC:
  tests:  0|3
 total_score: 40/70
 978c540
+Thu 14 Mar 2024 03:36:00 PM UTC: 
+ exercises.c | 25 ++++++++++++++++++++++++-
+ 1 file changed, 24 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:141:14: error: expected ‘;’ before ‘}’ token
+  141 |     orden = 1
+      |              ^
+      |              ;
+  142 |   }
+      |   ~           
+Compilation failed
+32cb0ae
