@@ -555,3 +555,18 @@ exercises.c:174:22: error: ‘Autor’ has no member named ‘nombreAutor’
       |                      ^
 Compilation failed
 c38df3e
+Thu 14 Mar 2024 04:04:17 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:173:15: error: ‘libro’ is a pointer; did you mean to use ‘->’?
+  173 |   strcpy(libro.titulo, titulo);
+      |               ^
+      |               ->
+exercises.c:174:15: error: ‘libro’ is a pointer; did you mean to use ‘->’?
+  174 |   strcpy(libro.autor.nombreAutor, nombreAutor);
+      |               ^
+      |               ->
+Compilation failed
+e2f3430
