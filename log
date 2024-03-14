@@ -233,3 +233,19 @@ exercises.c:118:13: error: ‘temp’ undeclared (first use in this function)
       |             ^~~~
 Compilation failed
 4dd8e4f
+Thu 14 Mar 2024 02:46:39 PM UTC: 
+ exercises.c | 34 ++++++++++++++--------------------
+ 1 file changed, 14 insertions(+), 20 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:89:9: error: ‘cont1’ undeclared (first use in this function); did you mean ‘cont’?
+   89 |   while(cont1 < size1 && cont2 < size2)
+      |         ^~~~~
+      |         cont
+exercises.c:89:9: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:89:26: error: ‘cont2’ undeclared (first use in this function); did you mean ‘cont’?
+   89 |   while(cont1 < size1 && cont2 < size2)
+      |                          ^~~~~
+      |                          cont
+Compilation failed
+70711ff

@@ -82,34 +82,28 @@ arreglos en un tercer arreglo también ordenado de menor a mayor.
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[]) 
 {
-  cont = 0;
-  newSize = size1 + size2;
-  int *newArr = (int*) malloc(newSize * sizeof(int));
-  while(cont < newSize)
+  int cont = 0;
+  int j = 0;
+  int k = 0;
+
+  while(cont1 < size1 && cont2 < size2)
     {
-      for(int i = 0; i < size1; i++, cont++)
-        {
-          newArr[cont] = arr1[i];
-        }
-      for(int k = 0; k < size2; k++, cont++)
-        {
-          newArr[cont] = arr2[k];
-        }
-    }
-  
-  for(i = 0; i < newArr; i++)
-    {
-      if(i = 0)
+      if(arr1[j] < arr2[k])
       {
-        printf("%d", newArr[i]);
+        result[cont] = arr1[j];
+          j++;
       }
       else
       {
-        printf("- %d", newArr[i]);
-      }   
+        result[cont] = arr2[k];
+        k++;
+      }
+      cont++;
     }
+
   
-  for(i = 0; i < newSize; i++)
+  
+  /*for(i = 0; i < newSize; i++)
     {
       for(j = i; j < largo; j++)
         {
@@ -120,7 +114,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
             newArr[j] = temp;
           }
         }
-    }
+    }*/
 }
 
 /*
