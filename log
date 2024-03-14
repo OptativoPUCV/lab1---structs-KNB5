@@ -570,3 +570,13 @@ exercises.c:174:15: error: ‘libro’ is a pointer; did you mean to use ‘->�
       |               ->
 Compilation failed
 e2f3430
+Thu 14 Mar 2024 04:05:46 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:174:22: error: ‘Autor’ has no member named ‘nombreAutor’
+  174 |   strcpy(libro->autor.nombreAutor, nombreAutor);
+      |                      ^
+Compilation failed
+9819daf
