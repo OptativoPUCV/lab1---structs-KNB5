@@ -126,21 +126,21 @@ int checkSorted(int arr[], int size)
   
   for(int i = 0; i < size - 1; i++)
     {
-      if(arr[i] <= arr[i + 1])
+      if(arr[i] < arr[i + 1])
       {
         contMenor++;
       }
-      else if(arr[i] >= arr[i + 1])
+      else
       {
         contMayor++;
       }
     }
 
-  if(contMenor == size - 1)
+  if(contMenor != 0 && contMayor == 0)
   {
     orden = 1;
   }
-  else if(contMayor == size - 1)
+  else if(contMayor != 0 && contMenor == 0)
   {
     orden = -1;
   }
